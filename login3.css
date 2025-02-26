@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+    width: 100%;
+    background-image: url(./pexels-marek-piwnicki-3907296-13327957.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: black;
+    animation: animation linear;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+
+
+}
+@keyframes animation{
+    100%{
+        filter:hue-rotate(300deg)
+    }
+
+}
+
+.login-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px #fff solid;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(20px);
+
+}
+h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+.input-box{
+    position: relative;
+    width: 310px;
+    margin: 30px 0;
+    border-bottom: 2px #fff solid;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.4s;
+   
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+
+.input-box input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 1em;
+    color: #fff;
+    padding: 0 40px 0 5px;
+
+}
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 57px;
+}
+
+.remember-forgot{
+    margin: -15px 0px 15px;
+    font-size: 0.9em;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.remember-forgot label input{
+    margin-right: 3px;
+    cursor: pointer;
+
+}
+.remember-forgot a{
+    color: #fff;
+    text-decoration: none;
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 100%;
+    background-color: #fff;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 40px;
+    font-size: 1.1em;
+    font-weight: 450;
+    color:black;
+}
+button:hover{
+    background-color:transparent ;
+    color:#fff;
+    border: 1px solid #fff;
+    backdrop-filter: blur(20px);
+}
+.register-link{
+    font-size: 0.9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.register-link a{
+    color: #fff;
+    text-decoration: none;
+
+}
+.register-link a:hover{
+    text-decoration: underline;
+}
